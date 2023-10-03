@@ -1,4 +1,4 @@
-package com.ecsproject.notifications.core.dtos;
+package com.ecsproject.usermanagement.core.dtos;
 
 import java.util.List;
 

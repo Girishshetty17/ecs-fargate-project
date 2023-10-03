@@ -1,20 +1,22 @@
-package com.ecsproject.notifications;
+package com.ecsproject.usermanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-public class NotificationsApplication extends SpringBootServletInitializer {
+@EnableTransactionManagement
+public class UserManagementApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NotificationsApplication.class, args);
+		SpringApplication.run(UserManagementApplication.class, args);
 	}
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(NotificationsApplication.class);
+		return application.sources(UserManagementApplication.class);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.ecsproject.notifications.configurations;
+package com.ecsproject.usermanagement.configurations;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
